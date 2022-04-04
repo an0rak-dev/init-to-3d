@@ -2,7 +2,9 @@
   "name": "init-to-3d",
   "version": "1.0.0",
   "description": "A BBL talk a gave to present the basic concepts of 3d.",
-  "scripts": {},
+  "scripts": {
+      "generate": "node ./src/main.js"
+  },
   "keywords": [
     "3D",
     "GL",
@@ -12,6 +14,7 @@
   "author": "Sylvain Nieuwlandt",
   "license": "Apache-2.0d",
   "dependencies": {
+    "jsdom": "^19.0.0",
     "reveal.js": "^4.3.1"
   }
 }

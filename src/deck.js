@@ -59,6 +59,12 @@ module.exports = class Deck {
     addPlugin(pluginName, pluginPath) {
         this.plugins[pluginName] = pluginPath;
     }
+    
+    addScriptRef(scriptPath) {
+        const script = this.document.createElement("script");
+        script.setAttribute("src", scriptPath);
+        this.document.body.appendChild(script);
+    }
 
     export() {
         let pluginInit = "";

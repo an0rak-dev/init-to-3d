@@ -16,8 +16,13 @@ async function main() {
 
     slideDeck.addStylesheet(`${REVEALJS_ROOT}/plugin/highlight/monokai.css`);
     
-    const slideContent = await fs.readFile(path.join(SLIDES, "test.md"));
-    slideDeck.addSection(slideContent);
+    const metadataRaw = await fs.readFile(path.join(RESOURCES, "metadata.json"));
+    const metadata = JSON.parse(metadataRaw);
+
+    for (const slide of metadata.order) {
+        const slideContent = await fs.readFile(path.join(SLIDES, `${slide}.md`));
+        slideDeck.addSection(slideContent);
+    }
 
     slideDeck.addPlugin("RevealNotes", `${REVEALJS_ROOT}/plugin/notes/notes.js`);
     slideDeck.addPlugin("RevealMarkdown", `${REVEALJS_ROOT}/plugin/markdown/markdown.js`);

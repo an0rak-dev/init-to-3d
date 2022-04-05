@@ -51,7 +51,7 @@ module.exports = class Deck {
         const slidesRoot = this.document.getElementById("deck");
         const section = this.document.createElement("section");
         section.setAttribute("data-markdown", "");
-        section.setAttribute("data-separator-vertical", "\\n---");
+        section.setAttribute("data-separator-vertical", "===");
         section.innerHTML = content;
         slidesRoot.appendChild(section);
     }

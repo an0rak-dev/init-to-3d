@@ -12,8 +12,8 @@ The slide is organized as follow :
     2. Math Math Math (_Matrix 4dim, Left hand/right hand coords_)
     3. Geometry (_Vertices, topology, spaces: world/clip/model_)
 2. Ok, how do we draw now ?
-    1. The Shader programs (_vertex shader, fragment shader_)
-    2. The MVP matrix and indices (_model, view, projection_)
+    1. The Data (Vertices/Indices, movement, MVP matrix)
+    2. The Shader programs (_vertex shader, fragment shader_)
     3. The camera and its movements
 3. The 3D on Web
     1. The standard (_WebGL, GLTF and the Khronos group_)

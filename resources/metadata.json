@@ -2,6 +2,7 @@
     "order": [
         "intro",
         "theory",
-        "how_to_draw"
+        "how_to_draw",
+        "3d_in_web"
     ]
 }

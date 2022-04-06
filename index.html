@@ -23,9 +23,80 @@ Max of what I can draw
 ![](./resources/images/ue5demo.jpg)
 
 Note:
-How to do this ?</section></div></div><script src="./node_modules/reveal.js/dist/reveal.js"></script><script src="./node_modules/reveal.js/plugin/notes/notes.js"></script><script src="./node_modules/reveal.js/plugin/markdown/markdown.js"></script><script src="./node_modules/reveal.js/plugin/highlight/highlight.js"></script><script>
+How to do this ?</section><section data-markdown="" data-separator-vertical="==="># Theory
+
+_Wait, don't leave the room !_
+
+===
+
+# CPU vs GPU
+
+_Two chips, two purposes_
+
+===
+
+## CPU (Central Processing Unit)
+
+![](./resources/images/cpu.png)
+
+Note:
+* Few cores (8-18), lots of computing power
+* Max N(cores) //, just sysint for threads
+* Compute operations in sequence
+* Used by game loop updates, networking....
+
+===
+
+## GPU (Graphic Processing Unit)
+
+![](./resources/images/gpu.png)
+
+Note:
+* Lots of cores (&gt; 1000), few computing power
+* Compute operations in parallel
+* Shaders, lightning, visual effects. 
+* May be integrated or dedicated.
+
+===
+
+# Maths
+
+_Yeah... I'm sorry_
+
+===
+
+## 3D means Vector
+
+`$$ pos = \begin{bmatrix} X \\ Y \\ Z \\ W \end{bmatrix} $$` 
+
+Note:
+* Each point is in a 3d coords space
+* Ussually : X -&gt; horizontal, Y -&gt; Vertical, Z -&gt; Depth
+* W for homgenous coords, useful for operations later (often == 1)
+
+===
+
+### 3D means Matrix
+
+`$$ newPos = \begin{bmatrix} X_{11} &amp; X_{12} &amp; X_{13} \\ Y_{11} &amp; Y_{12} &amp; Y_{13} \\ Z_{11} &amp; Z_{12} &amp; Z_{13} \\ W_{11} &amp; W_{12} &amp; W_{13} \end{bmatrix} * \begin{bmatrix} X \\ Y \\ Z \\ W \end{bmatrix} = \begin{bmatrix} X' \\ Y' \\ Z' \\ W' \end{bmatrix} $$`
+
+Note:
+* Each operation (translate, rotate, scale) is a different 4x4 matrix
+* Each operation can be combined in 1 matrix for complete movement
+* movement * vector =&gt; new position vector
+
+===
+
+### Referential Matters
+
+![](./resources/images/left_hand_right_hand.png)
+
+Note:
+* Coords depend of referential
+* Z axis may change all
+* May change according to the tool ! (Unreal, Blender...)</section></div></div><script src="./node_modules/reveal.js/dist/reveal.js"></script><script src="./node_modules/reveal.js/plugin/notes/notes.js"></script><script src="./node_modules/reveal.js/plugin/markdown/markdown.js"></script><script src="./node_modules/reveal.js/plugin/highlight/highlight.js"></script><script src="./node_modules/reveal.js/plugin/math/math.js"></script><script>
             Reveal.initialize({
                 hash: true,
-                plugins: [  RevealNotes, RevealMarkdown, RevealHighlight ]
+                plugins: [  RevealNotes, RevealMarkdown, RevealHighlight, RevealMath.KaTeX ]
             });
         </script></body></html>

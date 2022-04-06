@@ -27,6 +27,7 @@ async function main() {
     slideDeck.addPlugin("RevealNotes", `${REVEALJS_ROOT}/plugin/notes/notes.js`);
     slideDeck.addPlugin("RevealMarkdown", `${REVEALJS_ROOT}/plugin/markdown/markdown.js`);
     slideDeck.addPlugin("RevealHighlight", `${REVEALJS_ROOT}/plugin/highlight/highlight.js`);
+    slideDeck.addPlugin("RevealMath.KaTeX", `${REVEALJS_ROOT}/plugin/math/math.js`);
 
     fs.writeFile(path.join(PROJECT_ROOT, "index.html"), slideDeck.export(), { encoding: "utf8" });
 }

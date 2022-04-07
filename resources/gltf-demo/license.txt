@@ -1,0 +1,11 @@
+Model Information:
+* title:	Xolo the Axolotl
+* source:	https://sketchfab.com/3d-models/xolo-the-axolotl-d7c393f6315d41b898f04717f4f41169
+* author:	Lasharillo (https://sketchfab.com/lasharo_ent)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Xolo the Axolotl" (https://sketchfab.com/3d-models/xolo-the-axolotl-d7c393f6315d41b898f04717f4f41169) by Lasharillo (https://sketchfab.com/lasharo_ent) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -26,7 +26,7 @@ _And I never say 'Metaverse' !... Doh 🤦‍♂️_
 
 ===
 
-# If you have any questions ?
+# Do you have any questions ?
 
 ===
 
